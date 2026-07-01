@@ -36,3 +36,16 @@ Como el proyecto no tiene backend todavia, los cambios hechos desde el panel se 
 
 - `/`: portafolio publico.
 - `/admin`: portal privado local para agregar, quitar, importar y exportar datos.
+
+## Despliegue en Vercel
+
+Configuracion esperada:
+
+- Framework Preset: `Next.js`
+- Root Directory: `./`
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Output Directory: dejar vacio
+- Node.js: `20.9.0` o superior
+
+Si Vercel muestra `Not Found`, revisa que el proyecto importado apunte a la raiz donde estan `package.json` y la carpeta `app`, y que hayas subido al repositorio todos los archivos del proyecto.
