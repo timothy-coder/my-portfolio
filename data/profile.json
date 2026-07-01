@@ -6,8 +6,8 @@
   "profile": {
     "name": "NICOLAS BRANDON PARIONA DE LA PENA",
     "role": "Ingeniero de Sistemas",
-    "summary": "Ingeniero de Sistemas con una solida comprension de hardware y software, orientado a implementar soluciones tecnologicas en entornos profesionales.",
-    "about": "Cuento con entusiasmo por aplicar mis conocimientos tecnicos, fortalecer mis habilidades profesionales y aportar en proyectos de soporte, desarrollo, gestion de incidentes, capacitacion y administracion de soluciones tecnologicas.",
+    "summary": "Ingeniero de Sistemas con una sólida comprensión de hardware y software, orientado a implementar soluciones tecnológicas en entornos profesionales.",
+    "about": "Cuento con entusiasmo por aplicar mis conocimientos técnicos, fortalecer mis habilidades profesionales y aportar en proyectos de soporte, desarrollo, gestión de incidentes, capacitación y administración de soluciones tecnológicas.",
     "metrics": {
       "years": "2+",
       "projectCount": "ERP",
@@ -16,69 +16,69 @@
   },
   "projects": [
     {
-      "title": "Monitoreo y gestion de ERP",
+      "title": "Monitoreo y gestión de ERP",
       "category": "ERP",
-      "description": "Seguimiento, configuracion, capacitacion, asistencia y gestion de incidentes para un sistema ERP institucional.",
-      "tech": ["ERP", "Soporte TI", "Capacitacion"]
+      "description": "Seguimiento, configuración, capacitación, asistencia y gestión de incidentes para un sistema ERP institucional.",
+      "tech": ["ERP", "Soporte TI", "Capacitación"]
     },
     {
-      "title": "Analisis y diseno de software",
+      "title": "Análisis y diseño de software",
       "category": "Software",
-      "description": "Aplicacion de analisis, diseno de software y diseno de base de datos en proyectos academicos y practicas profesionales.",
-      "tech": ["Analisis", "Base de datos", "Documentacion"]
+      "description": "Aplicación de análisis, diseño de software y diseño de base de datos en proyectos académicos y prácticas profesionales.",
+      "tech": ["Análisis", "Base de datos", "Documentación"]
     },
     {
       "title": "Servicios TIC institucionales",
       "category": "TIC",
-      "description": "Apoyo en servicios de tecnologias de informacion, configuracion de equipos y atencion de requerimientos operativos.",
+      "description": "Apoyo en servicios de tecnologías de información, configuración de equipos y atención de requerimientos operativos.",
       "tech": ["TIC", "Hardware", "Software"]
     }
   ],
   "experience": [
     {
-      "role": "Asistencia, capacitacion y gestion de incidentes de un ERP",
+      "role": "Asistencia, capacitación y gestión de incidentes de un ERP",
       "company": "UNCP",
       "period": "Julio 2024 - Diciembre 2025",
-      "description": "Atencion de usuarios, seguimiento de incidencias, capacitacion funcional y soporte en el uso de un ERP institucional."
+      "description": "Atención de usuarios, seguimiento de incidencias, capacitación funcional y soporte en el uso de un ERP institucional."
     },
     {
-      "role": "Monitoreo, seguimiento, configuracion y capacitacion de un ERP",
+      "role": "Monitoreo, seguimiento, configuración y capacitación de un ERP",
       "company": "UNCP",
       "period": "Marzo 2024",
-      "description": "Monitoreo de procesos, configuracion del sistema y apoyo en capacitaciones para usuarios."
+      "description": "Monitoreo de procesos, configuración del sistema y apoyo en capacitaciones para usuarios."
     },
     {
       "role": "Servicio de TICs",
       "company": "UNCP",
       "period": "Octubre 2023",
-      "description": "Apoyo en servicios de tecnologias de informacion y comunicacion."
+      "description": "Apoyo en servicios de tecnologías de información y comunicación."
     },
     {
-      "role": "Practicante de Informatica",
+      "role": "Practicante de Informática",
       "company": "UNCP",
       "period": "Enero 2023 - Julio 2023",
-      "description": "Participacion en tareas de diseno de software y soporte informatico."
+      "description": "Participación en tareas de diseño de software y soporte informático."
     }
   ],
   "education": [
     {
-      "title": "Ingenieria de Sistemas",
-      "institution": "Universidad Nacional del Centro del Peru",
+      "title": "Ingeniería de Sistemas",
+      "institution": "Universidad Nacional del Centro del Perú",
       "period": "2019 - 2024",
-      "description": "Formacion en analisis y diseno de software, diseno de base de datos y tecnologias emergentes."
+      "description": "Formación en análisis y diseño de software, diseño de base de datos y tecnologías emergentes."
     }
   ],
   "skills": [
     {
       "group": "Software",
-      "items": ["Analisis de software", "Diseno de software", "APIs", "Base de datos"]
+      "items": ["Análisis de software", "Diseño de software", "APIs", "Base de datos"]
     },
     {
       "group": "Bases de datos",
       "items": ["MySQL", "MariaDB", "Modelado", "Consultas SQL"]
     },
     {
-      "group": "Web y programacion",
+      "group": "Web y programación",
       "items": ["HTML", "CSS", "Next.js 14", "Python Fullstack"]
     },
     {
@@ -86,12 +86,12 @@
       "items": ["Hardware", "Software", "Windows 10", "Windows 11", "ERP"]
     },
     {
-      "group": "Gestion",
-      "items": ["Scrum", "DevOps Foundation", "Capacitacion", "Gestion de incidentes"]
+      "group": "Gestión",
+      "items": ["Scrum", "DevOps Foundation", "Capacitación", "Gestión de incidentes"]
     },
     {
-      "group": "Ofimatica",
-      "items": ["Excel Microsoft 365", "Ofimatica", "Documentacion"]
+      "group": "Ofimática",
+      "items": ["Excel Microsoft 365", "Ofimática", "Documentación"]
     }
   ],
   "certificates": [
@@ -99,31 +99,31 @@
       "title": "Scrum Fundamentals Certified",
       "issuer": "Scrum Study",
       "period": "Abril 2024",
-      "description": "Comprension y competencia en los principios fundamentales de Scrum."
+      "description": "Comprensión y competencia en los principios fundamentales de Scrum."
     },
     {
       "title": "Cybersecurity Essentials",
       "issuer": "Cisco",
       "period": "Mayo 2022",
-      "description": "Fundamentos de ciberseguridad y proteccion de sistemas."
+      "description": "Fundamentos de ciberseguridad y protección de sistemas."
     },
     {
       "title": "Introduction to CyberSecurity",
       "issuer": "Cisco",
       "period": "2022",
-      "description": "Introduccion a conceptos esenciales de ciberseguridad."
+      "description": "Introducción a conceptos esenciales de ciberseguridad."
     },
     {
       "title": "Bootcamp Fullstack Python",
       "issuer": "TECSUP",
       "period": "Certificado",
-      "description": "Formacion intensiva en desarrollo fullstack con Python."
+      "description": "Formación intensiva en desarrollo fullstack con Python."
     },
     {
       "title": "Programacion, base de datos y API",
-      "issuer": "Certificacion",
+      "issuer": "Certificación",
       "period": "Certificado",
-      "description": "Certificacion orientada a programacion, bases de datos e integracion con APIs."
+      "description": "Certificación orientada a programación, bases de datos e integración con APIs."
     },
     {
       "title": "Next.js 14",
@@ -135,40 +135,40 @@
       "title": "DevOps Foundation",
       "issuer": "Curso",
       "period": "Certificado",
-      "description": "Fundamentos de cultura, practicas y herramientas DevOps."
+      "description": "Fundamentos de cultura, prácticas y herramientas DevOps."
     },
     {
       "title": "Soft Skills y Habilidades Directivas",
       "issuer": "Curso",
       "period": "Certificado",
-      "description": "Desarrollo de habilidades blandas y direccion de equipos."
+      "description": "Desarrollo de habilidades blandas y dirección de equipos."
     }
   ],
   "languages": [
     {
-      "name": "Ingles",
+      "name": "Inglés",
       "level": "Intermedio",
       "institution": "ICPNA"
     },
     {
-      "name": "Ingles",
+      "name": "Inglés",
       "level": "Intermedio",
-      "institution": "Centro de Idiomas de la Universidad Nacional del Centro del Peru"
+      "institution": "Centro de Idiomas de la Universidad Nacional del Centro del Perú"
     },
     {
-      "name": "Ingles",
+      "name": "Inglés",
       "level": "Avanzado",
       "institution": "Open English"
     }
   ],
   "contact": [
     {
-      "label": "Telefono",
+      "label": "Teléfono",
       "value": "928957753",
       "href": "tel:928957753"
     },
     {
-      "label": "Correo electronico",
+      "label": "Correo electrónico",
       "value": "Brandon05jpg@gmail.com",
       "href": "mailto:Brandon05jpg@gmail.com"
     }

@@ -14,7 +14,7 @@ const tabs = [
   ["profile", "Perfil"],
   ["projects", "Proyectos"],
   ["experience", "Experiencia"],
-  ["education", "Educacion"],
+  ["education", "Educación"],
   ["skills", "Habilidades"],
   ["certificates", "Certificados"],
   ["languages", "Idiomas"],
@@ -60,7 +60,7 @@ export default function AdminClient({ defaultData }) {
     const password = String(form.get("password") || "");
 
     if (username !== data.auth.username || password !== data.auth.password) {
-      setLoginError("Usuario o contrasena incorrectos.");
+      setLoginError("Usuario o contraseña incorrectos.");
       return;
     }
 
@@ -262,7 +262,7 @@ export default function AdminClient({ defaultData }) {
             </Label>
             <Button type="submit">Iniciar sesion</Button>
             <p className="form-note">
-              Demo local: usuario <strong>admin</strong>, contrasena <strong>admin123</strong>.
+              Demo local: usuario <strong>admin</strong>, contraseña <strong>admin123</strong>.
             </p>
             {loginError && (
               <p className="error-message" role="alert">
@@ -352,7 +352,7 @@ export default function AdminClient({ defaultData }) {
 function ProfileForm({ profile, onSubmit }) {
   return (
     <form className="admin-form" onSubmit={onSubmit}>
-      <AdminTitle title="Perfil publico" text="Edita la informacion principal que aparece en la portada." />
+      <AdminTitle title="Perfil público" text="Edita la información principal que aparece en la portada." />
       <Label>
         Nombre
         <Input name="name" required defaultValue={profile.name} />
@@ -371,7 +371,7 @@ function ProfileForm({ profile, onSubmit }) {
       </Label>
       <div className="form-grid">
         <Label>
-          Anios
+          Años
           <Input name="years" required defaultValue={profile.metrics.years} />
         </Label>
         <Label>
@@ -379,7 +379,7 @@ function ProfileForm({ profile, onSubmit }) {
           <Input name="projectCount" required defaultValue={profile.metrics.projectCount} />
         </Label>
         <Label>
-          Perfil tecnico
+          Perfil técnico
           <Input name="stack" required defaultValue={profile.metrics.stack} />
         </Label>
       </div>
@@ -405,11 +405,11 @@ function CollectionForm({ type, items, onSubmit, onDelete }) {
             </Label>
           </div>
           <Label>
-            Descripcion
+            Descripción
             <Textarea name="description" rows={3} required />
           </Label>
           <Label>
-            Tecnologias
+            Tecnologías
             <Input name="tech" placeholder="React, Node.js, PostgreSQL" required />
           </Label>
         </>
@@ -432,7 +432,7 @@ function CollectionForm({ type, items, onSubmit, onDelete }) {
             </Label>
           </div>
           <Label>
-            Descripcion
+            Descripción
             <Textarea name="description" rows={3} required />
           </Label>
         </>
@@ -446,7 +446,7 @@ function CollectionForm({ type, items, onSubmit, onDelete }) {
               <Input name="title" required />
             </Label>
             <Label>
-              Institucion
+              Institución
               <Input name="institution" required />
             </Label>
             <Label>
@@ -455,7 +455,7 @@ function CollectionForm({ type, items, onSubmit, onDelete }) {
             </Label>
           </div>
           <Label>
-            Descripcion
+            Descripción
             <Textarea name="description" rows={3} required />
           </Label>
         </>
@@ -491,7 +491,7 @@ function CollectionForm({ type, items, onSubmit, onDelete }) {
             </Label>
           </div>
           <Label>
-            Descripcion
+            Descripción
             <Textarea name="description" rows={3} required />
           </Label>
         </>
@@ -508,7 +508,7 @@ function CollectionForm({ type, items, onSubmit, onDelete }) {
             <Input name="level" required />
           </Label>
           <Label>
-            Institucion
+              Institución
             <Input name="institution" required />
           </Label>
         </div>
@@ -562,7 +562,7 @@ function AdminTitle({ title, text }) {
 const sectionTitles = {
   projects: "Proyectos",
   experience: "Experiencia",
-  education: "Educacion",
+  education: "Educación",
   skills: "Habilidades",
   certificates: "Certificados",
   languages: "Idiomas",
@@ -570,13 +570,13 @@ const sectionTitles = {
 };
 
 const sectionTexts = {
-  projects: "Agrega proyectos con categoria, descripcion y tecnologias separadas por coma.",
+  projects: "Agrega proyectos con categoría, descripción y tecnologías separadas por coma.",
   experience: "Registra cargos, empresas, periodos y responsabilidades principales.",
   education: "Agrega estudios, cursos o certificaciones relevantes.",
   skills: "Crea grupos de habilidades con elementos separados por coma.",
   certificates: "Registra certificaciones, cursos y constancias relevantes.",
-  languages: "Agrega idiomas, nivel e institucion donde los estudiaste.",
-  contact: "Administra enlaces publicos de contacto."
+  languages: "Agrega idiomas, nivel e institución donde los estudiaste.",
+  contact: "Administra enlaces públicos de contacto."
 };
 
 function itemTitle(type, item) {

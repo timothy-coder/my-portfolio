@@ -43,16 +43,16 @@ export default function PortfolioView({ data }) {
           </div>
 
           <aside className="hero-panel" aria-label="Resumen profesional">
-            <Metric value={profile.metrics.years} label="Anios construyendo software" />
+            <Metric value={profile.metrics.years} label="Años construyendo software" />
             <Metric value={profile.metrics.projectCount} label="Proyectos destacados" />
-            <Metric value={profile.metrics.stack} label="Perfil tecnico" />
+            <Metric value={profile.metrics.stack} label="Perfil técnico" />
           </aside>
         </section>
 
         <section className="section-band about">
           <div className="section-header">
             <p className="eyebrow">Perfil</p>
-            <h2>Ingenieria aplicada a problemas reales</h2>
+            <h2>Ingeniería aplicada a problemas reales</h2>
           </div>
           <p>{profile.about}</p>
         </section>
@@ -76,47 +76,50 @@ export default function PortfolioView({ data }) {
           </div>
         </section>
 
-        <section className="content-section two-column" id="experiencia">
-          <div>
-            <div className="section-header">
-              <p className="eyebrow">Ruta</p>
-              <h2>Experiencia</h2>
-            </div>
-            <div className="timeline">
-              {data.experience.map((item) => (
-                <Card className="timeline-item" key={`${item.role}-${item.period}`}>
-                  <p className="period">{item.period}</p>
-                  <h3>
-                    {item.role} - {item.company}
-                  </h3>
-                  <p>{item.description}</p>
-                </Card>
-              ))}
-            </div>
+        <section className="content-section experience-showcase" id="experiencia">
+          <div className="section-header centered">
+            <p className="eyebrow">Ruta profesional</p>
+            <h2>Experiencia laboral</h2>
           </div>
-
-          <div>
-            <div className="section-header">
-              <p className="eyebrow">Formacion</p>
-              <h2>Educacion</h2>
-            </div>
-            <div className="timeline compact">
-              {data.education.map((item) => (
-                <Card className="timeline-item" key={`${item.title}-${item.period}`}>
+          <div className="experience-grid">
+            {data.experience.map((item, index) => (
+              <Card className="experience-card" tabIndex={0} key={`${item.role}-${item.period}`}>
+                <div className="experience-icon" aria-hidden="true">
+                  {index === 0 ? "ERP" : index === 1 ? "CFG" : index === 2 ? "TIC" : "INF"}
+                </div>
+                <div>
                   <p className="period">{item.period}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.institution}</p>
+                  <h3>{item.role}</h3>
+                  <p className="experience-company">{item.company}</p>
                   <p>{item.description}</p>
-                </Card>
-              ))}
-            </div>
+                  <span className="learn-more">Ver detalle {"->"}</span>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <section className="content-section education-section">
+          <div className="section-header">
+            <p className="eyebrow">Formación</p>
+            <h2>Educación</h2>
+          </div>
+          <div className="timeline compact">
+            {data.education.map((item) => (
+              <Card className="timeline-item" key={`${item.title}-${item.period}`}>
+                <p className="period">{item.period}</p>
+                <h3>{item.title}</h3>
+                <p>{item.institution}</p>
+                <p>{item.description}</p>
+              </Card>
+            ))}
           </div>
         </section>
 
         <section className="content-section skills-section" id="habilidades">
           <div className="section-header">
             <p className="eyebrow">Stack</p>
-            <h2>Habilidades tecnicas</h2>
+            <h2>Habilidades técnicas</h2>
           </div>
           <MagicSkillOrbit skills={data.skills} />
           <div className="skills-layout">
@@ -173,7 +176,7 @@ export default function PortfolioView({ data }) {
         <section className="contact-band" id="contacto">
           <div>
             <p className="eyebrow">Contacto</p>
-            <h2>Conversemos sobre tecnologia, producto o automatizacion.</h2>
+            <h2>Conversemos sobre tecnología, producto o automatización.</h2>
           </div>
           <div className="contact-links">
             {data.contact.map((item) => (

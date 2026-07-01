@@ -73,27 +73,27 @@ export default function MagicSkillOrbit({ skills }) {
   return (
     <div className="magic-skills" aria-label="Visualizacion de habilidades tecnicas">
       <div className="magic-orbit" aria-hidden="true">
-        <div className="orbit-line orbit-line-outer" />
-        <div className="orbit-line orbit-line-inner" />
-        <div className="orbit-line orbit-line-tilt" />
-
-        <div className="magic-core">
-          <img src="/logo.jpg" alt="" />
-          <span>NB</span>
-        </div>
-
-        {orbitItems.map((item, index) => (
-          <div
-            className={`orbit-path orbit-path-${item.ring}`}
-            style={{ "--orbit-delay": item.delay, "--orbit-index": index }}
-            key={item.label}
-          >
-            <div className="orbit-node">
+        <div className="magic-logo-grid">
+          {orbitItems.map((item) => (
+            <div className="orbit-node" key={item.label}>
               {item.icon ? <img src={item.icon} alt="" /> : <strong>{item.short}</strong>}
               <span>{item.label}</span>
             </div>
+          ))}
+        </div>
+
+        <div className="magic-stage">
+          <div className="orbit-line orbit-line-outer" />
+          <div className="orbit-line orbit-line-inner" />
+          <div className="orbit-line orbit-line-tilt" />
+
+          <div className="magic-core">
+            <span className="magic-core-logo">
+              <img src="/logo.jpg" alt="" />
+            </span>
+            <span>NB</span>
           </div>
-        ))}
+        </div>
       </div>
 
       <div className="magic-skill-panel">
