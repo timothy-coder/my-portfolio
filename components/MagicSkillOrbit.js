@@ -1,15 +1,69 @@
 const orbitItems = [
-  { label: "HTML", short: "H", ring: "outer", delay: "0s" },
-  { label: "CSS", short: "C", ring: "outer", delay: "-2s" },
-  { label: "Next.js", short: "N", ring: "outer", delay: "-4s" },
-  { label: "Python", short: "Py", ring: "outer", delay: "-6s" },
-  { label: "MySQL", short: "SQL", ring: "outer", delay: "-8s" },
-  { label: "MariaDB", short: "DB", ring: "outer", delay: "-10s" },
-  { label: "APIs", short: "API", ring: "inner", delay: "-1s" },
+  {
+    label: "HTML",
+    short: "H",
+    ring: "outer",
+    delay: "0s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    label: "CSS",
+    short: "C",
+    ring: "outer",
+    delay: "-2s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    label: "Next.js",
+    short: "N",
+    ring: "outer",
+    delay: "-4s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    label: "Python",
+    short: "Py",
+    ring: "outer",
+    delay: "-6s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+  },
+  {
+    label: "MySQL",
+    short: "SQL",
+    ring: "outer",
+    delay: "-8s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    label: "MariaDB",
+    short: "DB",
+    ring: "outer",
+    delay: "-10s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
+  },
+  {
+    label: "APIs",
+    short: "API",
+    ring: "inner",
+    delay: "-1s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+  },
   { label: "ERP", short: "ERP", ring: "inner", delay: "-3s" },
   { label: "Scrum", short: "SC", ring: "inner", delay: "-5s" },
-  { label: "DevOps", short: "DO", ring: "inner", delay: "-7s" },
-  { label: "Windows", short: "Win", ring: "inner", delay: "-9s" },
+  {
+    label: "DevOps",
+    short: "DO",
+    ring: "inner",
+    delay: "-7s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg"
+  },
+  {
+    label: "Windows",
+    short: "Win",
+    ring: "inner",
+    delay: "-9s",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg"
+  },
   { label: "Excel", short: "XL", ring: "inner", delay: "-11s" }
 ];
 
@@ -35,7 +89,7 @@ export default function MagicSkillOrbit({ skills }) {
             key={item.label}
           >
             <div className="orbit-node">
-              <strong>{item.short}</strong>
+              {item.icon ? <img src={item.icon} alt="" /> : <strong>{item.short}</strong>}
               <span>{item.label}</span>
             </div>
           </div>
