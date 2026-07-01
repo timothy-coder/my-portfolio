@@ -317,11 +317,45 @@ h3 {
 
 .hero-summary {
   max-width: 760px;
-  margin: 26px 0 0;
+  margin: 22px 0 0;
   color: #3f4c58;
   font-size: clamp(1.12rem, 2vw, 1.48rem);
   font-weight: 600;
   line-height: 1.6;
+}
+
+.typewriter-role {
+  display: inline-flex;
+  align-items: center;
+  min-height: clamp(38px, 5vw, 58px);
+  margin: 18px 0 0;
+  color: var(--primary);
+  font-size: clamp(1.28rem, 3vw, 2.45rem);
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  line-height: 1.08;
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 3px;
+  height: 1.05em;
+  margin-left: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  animation: caret-blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes caret-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero-actions,

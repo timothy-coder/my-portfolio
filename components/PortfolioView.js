@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import MagicSkillOrbit from "./MagicSkillOrbit";
+import TypewriterRole from "./TypewriterRole";
 
 export default function PortfolioView({ data }) {
   const profile = data.profile;
@@ -28,8 +29,8 @@ export default function PortfolioView({ data }) {
       <main>
         <section className="hero" id="inicio">
           <div className="hero-copy">
-            <p className="eyebrow">{profile.role}</p>
             <h1>{profile.name}</h1>
+            <TypewriterRole />
             <p className="hero-summary">{profile.summary}</p>
             <div className="hero-actions">
               <Button asChild>
@@ -112,7 +113,7 @@ export default function PortfolioView({ data }) {
           </div>
         </section>
 
-        <section className="content-section" id="habilidades">
+        <section className="content-section skills-section" id="habilidades">
           <div className="section-header">
             <p className="eyebrow">Stack</p>
             <h2>Habilidades tecnicas</h2>
